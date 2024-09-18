@@ -14,7 +14,7 @@ A basic tutorial for Java beginners to help you get familiar with Java knowledge
 | 2             | reflect     | -                  | [CN](#) / [EN](#) | done   |
 | 2             | reflect     | -                  | [CN](#) / [EN](#) | done   |
 
-## ponsors
+## Sponsors
 
 [github sponsors](https://github.com/sponsors/Harries?o=esb)
 
