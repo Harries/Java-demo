@@ -12,7 +12,10 @@ A basic tutorial for Java beginners to help you get familiar with Java knowledge
 |---------------|-------------|--------------------|-------------------|--------|
 | 1             | classloader | -                  | [CN](#) / [EN](#) | done   |
 | 2             | reflect     | -                  | [CN](#) / [EN](#) | done   |
-| 2             | reflect     | -                  | [CN](#) / [EN](#) | done   |
+| 3             | Fitten Code     | -                  | [CN](#) / [EN](#) | done   |
+| 4             | Basic syntax     | -                  | [CN](#) / [EN](#) | done   |
+| 5             | Fitten Code     | -                  | [CN](#) / [EN](#) | done   |
+| 6             | Fitten Code     | -                  | [CN](#) / [EN](#) | done   |
 
 ## Sponsors
 
