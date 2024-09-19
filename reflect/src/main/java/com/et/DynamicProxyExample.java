@@ -4,17 +4,17 @@ import java.lang.reflect.Proxy;
 
 public class DynamicProxyExample {
     public static void main(String[] args) {
-        // 创建实际对象
+        // real service
         RealService realService = new RealService();
 
-        // 创建动态代理对象
+        // create Dynamic proxy
         Service proxyInstance = (Service) Proxy.newProxyInstance(
-            realService.getClass().getClassLoader(),      // 类加载器
-            realService.getClass().getInterfaces(),       // 被代理类实现的接口
-            new DynamicProxyHandler(realService)          // 代理处理类
+            realService.getClass().getClassLoader(),      // classloader
+            realService.getClass().getInterfaces(),       // interface
+            new DynamicProxyHandler(realService)          // real class
         );
 
-        // 调用代理对象的方法
+        // invoke
         proxyInstance.perform();
     }
 }

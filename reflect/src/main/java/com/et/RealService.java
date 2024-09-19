@@ -1,6 +1,6 @@
 package com.et;
 
-// 该接口的实现类
+
 class RealService implements Service {
     @Override
     public void perform() {
