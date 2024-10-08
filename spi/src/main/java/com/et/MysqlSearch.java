@@ -4,6 +4,6 @@ public class MysqlSearch implements SearchService{
 
     @Override
     public String search(String key) {
-        return "¡¾Mysql¡¿search" + key + "£¬result£ºNo";
+        return "Mysqlsearch" + key + "result No";
     }
 }

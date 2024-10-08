@@ -4,6 +4,6 @@ public class RedisSearch implements SearchService{
 
     @Override
     public String search(String key) {
-        return "¡¾Redis¡¿search" + key + "£¬result£ºYes";
+        return "Redissearch" + key + "result Yes";
     }
 }
