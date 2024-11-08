@@ -9,19 +9,19 @@ import static net.bytebuddy.matcher.ElementMatchers.named;
 public class ByteBuddyExample {
     public static void main(String[] args) {
         try {
-            // 使用ByteBuddy创建一个新的类
+            // Use ByteBuddy to create a new class
             Class<?> dynamicType = new ByteBuddy()
-                .subclass(Object.class) // 继承自Object类
-                .name("com.example.HelloWorld") // 定义类名
-                .method(named("toString")) // 定义方法
-                .intercept(FixedValue.value("Hello, ByteBuddy!")) // 方法返回固定值
+                .subclass(Object.class) // Inherit from the Object class
+                .name("com.example.HelloWorld") // Define the class name
+                .method(named("toString")) // Define the method to intercept
+                .intercept(FixedValue.value("Hello, ByteBuddy!")) // Method returns a fixed value
                 .make()
                 .load(ByteBuddyExample.class.getClassLoader(), ClassLoadingStrategy.Default.WRAPPER)
                 .getLoaded();
 
-            // 创建类的实例并调用toString方法
+            // Create an instance of the class and call the toString method
             Object instance = dynamicType.getDeclaredConstructor().newInstance();
-            System.out.println(instance.toString()); // 输出: Hello, ByteBuddy!
+            System.out.println(instance.toString()); // Output: Hello, ByteBuddy!
         } catch (Exception e) {
             e.printStackTrace();
         }

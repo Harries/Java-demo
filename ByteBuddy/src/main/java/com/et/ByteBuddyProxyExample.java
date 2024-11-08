@@ -5,28 +5,25 @@ import net.bytebuddy.implementation.MethodDelegation;
 import net.bytebuddy.implementation.bind.annotation.BindingPriority;
 import net.bytebuddy.matcher.ElementMatchers;
 
-import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 
 public class ByteBuddyProxyExample {
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        // 创建一个原始对象
+        // Create an original object
         Foo foo = new Foo();
 
-        // 使用ByteBuddy创建代理
+        // Use ByteBuddy to create a proxy
         Foo proxy = (Foo) new ByteBuddy()
                 .subclass(Foo.class)
-                .method(ElementMatchers.any()) // 拦截所有方法
-                .intercept(MethodDelegation.to(new Interceptor())) // 委托给Interceptor类
+                .method(ElementMatchers.any()) // Intercept all methods
+                .intercept(MethodDelegation.to(new Interceptor())) // Delegate to the Interceptor class
                 .make()
                 .load(Foo.class.getClassLoader())
                 .getLoaded()
                 .getDeclaredConstructor()
                 .newInstance();
 
-        // 调用方法
+        // Call the method
         System.out.println(proxy.sayHello());
     }
 
@@ -41,9 +38,14 @@ public class ByteBuddyProxyExample {
         public String sssintercept() {
             return "ssss";
         }
+
         @BindingPriority(2)
         public String intercept() {
             return "Hello from Interceptor";
+        }
+
+        public String intercept(String sss,String bbbb) {
+            return " two parameters";
         }
     }
 }
