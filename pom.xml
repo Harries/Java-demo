@@ -16,6 +16,7 @@
         <module>npe</module>
         <module>spi</module>
         <module>ByteBuddy</module>
+        <module>CustomeMq</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
