@@ -16,6 +16,8 @@
         <module>npe</module>
         <module>spi</module>
         <module>ByteBuddy</module>
+        <module>Awaitility</module>
+        <module>oshi</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
