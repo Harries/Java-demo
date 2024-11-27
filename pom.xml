@@ -19,6 +19,7 @@
         <module>Awaitility</module>
         <module>oshi</module>
         <module>CustomeMq</module>
+        <module>Orika</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
