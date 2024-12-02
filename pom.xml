@@ -21,6 +21,7 @@
         <module>CustomeMq</module>
         <module>Orika</module>
         <module>poi-tl</module>
+        <module>commons-csv</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
