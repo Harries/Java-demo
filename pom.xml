@@ -25,6 +25,7 @@
         <module>jsonpath</module>
         <module>bcpkix-jdk15on</module>
         <module>jackson-dataformat-yaml</module>
+        <module>jsqlparser</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
