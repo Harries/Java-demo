@@ -10,7 +10,6 @@ class MyClass {
         this.value = value;
     }
 
-    // Getter ºÍ Setter
     public String getName() {
         return name;
     }
